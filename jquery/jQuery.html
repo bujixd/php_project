@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+        body{
+            background-color: gray;
+            text-align:center;
+        }
+
+        .image{
+            margin:10px auto;
+            padding: 10px 10px;
+        }
+
+        .url{
+            margin:10px auto;
+            padding: 10px 10px;
+            font-size: 30px;
+        }
+
+        .up{
+            margin:10px auto;
+            padding: 10px 10px;
+            width: 300px;
+            height:auto;
+            background-color:#ffffff;
+        }
+
+        .down{
+            background-color: #C00;
+        }
+
+    </style>
+    <script type="text/javascript" src="include/jquery.js"></script>
+    <script>
+
+        $(document).ready(function(){
+
+            $("img").click(function(){
+                $(this).attr("src","img/bbc1.jph")
+                    $("img").error(function(){
+                        $(this).attr("src","img/news.jpg");
+                    });
+                 });
+
+            $(".up").hover(function(){
+               $(this).addClass("down")
+            },function(){
+                $(this).removeClass("down")
+            });
+
+            $("a").dblclick(function(){
+                $("#page p").append("welcome "+$(this).text()+"</br>");
+            });
+        });
+
+
+    </script>
+
+</head>
+<body>
+<div class="image" >
+    <img src="img/bbc.jpg" />
+    <img src="img/bbc.jpg" />
+    <img src="img/bbc.jpg" />
+</div>
+<div class="up">
+        <p>jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation,
+        event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers.
+        With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.
+        </p>
+    </div>
+
+<div class="url">
+    <a href="javasrcipt:void(0)">dai</a>
+    <a href="javasrcipt:void(0)">jiang</a>
+    <a href="javasrcipt:void(0)">zuo</a>
+</div>
+    <div id="page">
+        <p></p>
+    </div>
+
+</body>
+</html>

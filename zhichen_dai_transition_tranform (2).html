@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        article{
+            position: absolute;
+            width: 300px;
+            height: 40px;
+            padding: 10px 20px;
+            color: #ffffff;
+            background-color: #C00;
+            overflow: hidden;
+            -webkit-transition:all 200ms linear 0s;
+            transition:all 1s linear 0s;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            box-shadow: 4px 6px 2px #aaaaaa;
+        }
+
+        article:hover{
+            -webkit-transform:translate3d(10,10,10);
+            transform:translate3d(10,10,10);
+            width: 500px;
+            height: 450px;
+            color: #FFF;
+            background-color: #00F;
+        }
+
+        .menu{
+            position: relative;
+            margin-top: 10px;
+            width: 300px;
+            height: 20px;
+            left: -200px;
+            -webkit-border-radius: 5px;
+            color: #eeeeee;
+            background-color: #C00;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            cursor: pointer;
+            -webkit-transition:all 200ms linear 0s;
+        }
+        .menu>div:first-child{
+            float: left;
+            width: 180px;
+            text-align: right;
+            margin-right: 20px;
+        }
+        .menu>div:last-child{
+            float: right;
+            width: 100px;
+        }
+        .menu:hover{
+			-webkit-transform:scale(1,1.5) ;
+            transform:scale(1,1.5) ;
+            left: -5px;
+            color: white;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+<div style="position: absolute; left: 0px; top: 0px;">
+<div class="menu">
+    <div>Some description</div>
+    <div>Menu Item 1</div>
+</div>
+<div class="menu">
+    <div>Some description</div>
+    <div>Menu Item 2</div>
+</div>
+<div class="menu">
+    <div>Some description</div>
+    <div>Menu Item 3</div>
+</div>
+</div>
+<article style="top: 140px;">
+    <h3>Something About Stevens</h3>
+    <p>
+Stevens Institute of Technology, The Innovation University®, is a premier, private research university situated in Hoboken, N.J. overlooking the Manhattan skyline. Founded in 1870, technological innovation has been the hallmark and legacy of Stevens’ education and research programs for more than 140 years. Within the university’s three schools and one college, more than 6,100 undergraduate and graduate students collaborate with more than 350 faculty members in an interdisciplinary, student-centric, entrepreneurial environment to advance the frontiers of science and leverage technology to confront global challenges. Stevens is home to three national research centers of excellence, as well as joint research programs focused on critical industries such as healthcare, energy, finance, defense and STEM education. The university is the fastest-rising college in U.S. News & World Report’s ranking of the best national universities, and it is consistently ranked among the nation’s elite for return on investment for students, career services programs, and mid-career salaries of alumni. Stevens is in the midst of a 10-year strategic plan, The Future. Ours to Create, designed to further extend the Stevens legacy to create a forward-looking and far-reaching institution with global impact.
+    </p>
+</article>
+
+
+</body>
+</html>
